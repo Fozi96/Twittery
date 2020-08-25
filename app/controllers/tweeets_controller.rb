@@ -1,27 +1,17 @@
 class TweeetsController < ApplicationController
   before_action :set_tweeet, only: [:show, :edit, :post, :update, :destroy]
-
-
   def index
     @tweeets = Tweeet.all.order("created_at DESC")
   end
-
-
   def show
   end
-
-
   def new
     @tweeet = Tweeet.new
   end
-
-
   def edit
   end
-
 def Post
 end
-
   def create
     @tweeet = Tweeet.new(tweeet_params)
 
