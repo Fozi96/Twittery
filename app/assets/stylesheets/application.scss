@@ -14,19 +14,145 @@
  *= require_self
  */
 
-@import "bulma";
+ @import "bulma";
 
-.navbar-brand .title{
-  color: white;
-}
+ .navbar-brand .title {
+ 	color: white;
+ }
 
-// round images
-.images{
-  border-radius: 50%;
-  img{
-    border-radius: 50%;
-  }
-}
-.notification:not(:last-child) {
-  margin-bottom: 0;
-}
+ // round images
+ .image {
+ 	border-radius: 50%;
+ 	img {
+ 		border-radius: 50%;
+ 	}
+ }
+ .notification:not(:last-child) {
+ 	margin-bottom: 0;
+ }
+ html {
+   font-size: 62.5%;
+   height: 100%;
+ }
+
+ body {
+   margin: 0;
+   height: 100%;
+   background: #F0FFFF;
+   color: blue;
+ }
+
+ header {
+   display: block;
+   min-width: 98px;
+   text-align: center;
+   font-size: 1.9rem;
+ }
+
+ main {
+   min-width: 424px;
+ }
+
+ footer p {
+   margin: 10px;
+ }
+
+ p {
+   word-wrap: break-word;
+ }
+
+ ul {
+   margin: 0;
+   padding: 0;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ a {
+   text-decoration: none;
+   color: #black;
+ }
+
+ a:hover {
+   text-decoration: none;
+ }
+
+ header span {
+   margin: 10px;
+ }
+
+ header a {
+   display: block;
+   padding: 15px 20px;
+   margin: 15px 0;
+   max-width: 164px;
+   border-radius: 50px;
+ }
+
+ header a:hover {
+   background: #182d40;
+ }
+
+ .header_tweet a{
+   background: #DC143C;
+   color: #F0F8FF;
+ }
+
+ .header_tweet a:hover {
+   background: #1681c2;
+ }
+
+ @media (max-width: 991px) {
+   header span {
+     display: none;
+   }
+
+   header a {
+     padding: 10px 10px;
+     width: 47px;
+   }
+
+   footer p {
+     display: none;
+   }
+ }
+
+ .main_top {
+   display: flex;
+   height: 53px;
+   border-bottom: solid 1px #blue;
+ }
+
+ .main_top_back {
+   display: block;
+   height: 53px;
+   margin-right: 20px;
+   font-size: 1.9rem;
+ }
+
+ .main_top_h2 {
+   display: block;
+ }
+
+ .main_top_back a {
+   line-height: 53px;
+ }
+
+ h2 {
+   font-size: 1.9rem;
+   margin: 0;
+   line-height: 53px;
+ }
+
+ .post-container {
+   height: auto;
+   border-bottom: solid 1px #38444d;
+ }
+
+ .created-time, .post-container a, footer p{
+   color: #000000;
+ }
+
+ 

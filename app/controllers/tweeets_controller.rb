@@ -1,17 +1,24 @@
 class TweeetsController < ApplicationController
-  before_action :set_tweeet, only: [:show, :edit, :post, :update, :destroy]
+  before_action :set_tweeet, only: [:show, :edit, :update, :destroy,]
+
   def index
     @tweeets = Tweeet.all.order("created_at DESC")
   end
+
   def show
   end
+
   def new
-    @tweeet = Tweeet.new
+    if params[:back]
+      @tweeet = Tweeet.new(tweeet_params)
+    else
+      @tweeet = Tweeet.new
+    end
   end
+
   def edit
   end
-def Post
-end
+
   def create
     @tweeet = Tweeet.new(tweeet_params)
 
@@ -29,6 +36,10 @@ end
   def confirm
       @tweeet = Tweeet.new(tweeet_params)
       render :new if @tweeet.invalid?
+    end
+    def back
+      @tweeet = Tweeet.edit(tweeet_params)
+      render :choose_new_or_edit if @tweeet.invalid?
     end
   def update
     respond_to do |format|
@@ -51,11 +62,11 @@ end
   end
 
   private
-    def set_tweeet
-      @tweeet = Tweeet.find(params[:id])
-    end
+  def set_tweeet
+    @tweeet = Tweeet.find(params[:id])
+  end
 
-    def tweeet_params
-      params.require(:tweeet).permit(:tweeet)
-    end
+  def tweeet_params
+    params.require(:tweeet).permit(:tweeet)
+  end
 end
