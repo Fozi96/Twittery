@@ -18,6 +18,7 @@
 
  .navbar-brand .title {
  	color: white;
+  font-size: 20px;
  }
 
  // round images
@@ -31,7 +32,7 @@
  	margin-bottom: 0;
  }
  html {
-   font-size: 62.5%;
+   font-size: 20px;
    height: 100%;
  }
 
@@ -40,6 +41,7 @@
    height: 100%;
    background: #F0FFFF;
    color: blue;
+   font-size: 20px;
  }
 
  header {
@@ -54,7 +56,7 @@
  }
 
  footer p {
-   margin: 10px;
+   margin: 20px;
  }
 
  p {
@@ -80,15 +82,16 @@
  }
 
  header span {
-   margin: 10px;
+   margin: 100px;
  }
 
  header a {
    display: block;
-   padding: 15px 20px;
-   margin: 15px 0;
-   max-width: 164px;
-   border-radius: 50px;
+   padding: 40px 40px;
+   margin: 40px 0;
+   max-width: 960px;
+   border-radius: 100px;
+
  }
 
  header a:hover {
@@ -102,34 +105,36 @@
 
  .header_tweet a:hover {
    background: #1681c2;
+
  }
 
- @media (max-width: 991px) {
+ @media (max-width: 200px) {
    header span {
      display: none;
    }
 
    header a {
-     padding: 10px 10px;
-     width: 47px;
+     padding: 40px 40px;
+     width: 100px;
    }
 
    footer p {
      display: none;
+     padding: 1.9rem;
    }
  }
 
  .main_top {
    display: flex;
-   height: 53px;
-   border-bottom: solid 1px #blue;
+   height: 100px;
+   border-bottom: solid 200px #blue;
  }
 
  .main_top_back {
    display: block;
    height: 53px;
-   margin-right: 20px;
-   font-size: 1.9rem;
+   margin-right: 200px;
+   font-size: 400px;
  }
 
  .main_top_h2 {
@@ -137,22 +142,22 @@
  }
 
  .main_top_back a {
-   line-height: 53px;
+   line-height: 400px;
  }
 
  h2 {
    font-size: 1.9rem;
    margin: 0;
-   line-height: 53px;
+   line-height: 60px;
  }
 
  .post-container {
    height: auto;
-   border-bottom: solid 1px #38444d;
+   border-bottom: solid 0px #38444d;
+   font-size: 400px;
+
  }
 
  .created-time, .post-container a, footer p{
    color: #000000;
  }
-
- 
