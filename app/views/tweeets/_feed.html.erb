@@ -23,7 +23,7 @@
 
            <% end %>
       <br>
-    
+
 
 		</div>
 	</article>
@@ -34,14 +34,11 @@
   <div class="box">
   	<article class="media">
   		<div class="media-left">
-  			<figure class="image is-64x64">
-  				<%= gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name) %>
-  			</figure>
+
   		</div>
   		<div class="media-content">
   			<div class="content">
-  				<strong><%= tweeet.user.name %></strong><br />
-  				<small><%= tweeet.user.username %></small><br/>
+  			
   				<p><%= tweeet.tweeet %></p>
   			</div>
         <% if user_signed_in? && current_user.id == tweeet.user_id %>
