@@ -1,18 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
 
  @import "bulma";
 
@@ -21,7 +7,6 @@
   font-size: 20px;
  }
 
- // round images
  .image {
  	border-radius: 50%;
  	img {
@@ -31,133 +16,9 @@
  .notification:not(:last-child) {
  	margin-bottom: 0;
  }
- html {
-   font-size: 20px;
-   height: 100%;
- }
 
- body {
-   margin: 0;
-   height: 100%;
-   background: #F0FFFF;
-   color: blue;
-   font-size: 20px;
- }
-
- header {
-   display: block;
-   min-width: 98px;
-   text-align: center;
-   font-size: 1.9rem;
- }
-
- main {
-   min-width: 424px;
- }
 
  footer p {
-   margin: 20px;
- }
-
- p {
-   word-wrap: break-word;
- }
-
- ul {
    margin: 0;
-   padding: 0;
- }
-
- li {
-   list-style: none;
- }
-
- a {
-   text-decoration: none;
-   color: #black;
- }
-
- a:hover {
-   text-decoration: none;
- }
-
- header span {
-   margin: 100px;
- }
-
- header a {
-   display: block;
-   padding: 40px 40px;
-   margin: 40px 0;
-   max-width: 960px;
-   border-radius: 100px;
-
- }
-
- header a:hover {
-   background: #182d40;
- }
-
- .header_tweet a{
-   background: #DC143C;
-   color: #F0F8FF;
- }
-
- .header_tweet a:hover {
-   background: #1681c2;
-
- }
-
- @media (max-width: 200px) {
-   header span {
-     display: none;
-   }
-
-   header a {
-     padding: 40px 40px;
-     width: 100px;
-   }
-
-   footer p {
-     display: none;
-     padding: 1.9rem;
-   }
- }
-
- .main_top {
-   display: flex;
-   height: 100px;
-   border-bottom: solid 200px #blue;
- }
-
- .main_top_back {
-   display: block;
-   height: 53px;
-   margin-right: 200px;
-   font-size: 400px;
- }
-
- .main_top_h2 {
-   display: block;
- }
-
- .main_top_back a {
-   line-height: 400px;
- }
-
- h2 {
-   font-size: 1.9rem;
-   margin: 0;
-   line-height: 60px;
- }
-
- .post-container {
-   height: auto;
-   border-bottom: solid 0px #38444d;
-   font-size: 400px;
-
- }
-
- .created-time, .post-container a, footer p{
-   color: #000000;
+   width: 100%;
  }

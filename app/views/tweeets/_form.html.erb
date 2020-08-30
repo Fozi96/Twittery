@@ -1,7 +1,7 @@
 <%= form_with(model: @tweeet, local: true, url: choose_new_or_edit) do |form| %>
   <% if @tweeet.errors.any? %>
 <div id="error_explanation">
-  <h2><%= pluralize(tweeet.errors.count, "error") %> prohibited this tweeet from being saved :</h2>
+  <h2><%= pluralize(tweeet.errors.count, "error") %> prevented this tweet from being saved :</h2>
 
   <ul>
     <% tweeet.errors.full_messages.each do |message| %>
@@ -10,8 +10,9 @@
   </ul>
   </div>
   <% end %>
+
   <div class="field">
-    <%= form.label :tweeet %>
+  
     <%= form.text_area :tweeet %>
   </div>
 

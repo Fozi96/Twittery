@@ -1,15 +1,15 @@
-<h1>Tweets</h1>
-<%= link_to 'New Tweet', new_tweeet_path %>
-    <% @tweeets.each do |tweeet| %>
-      <hr>
-        <div>
-          <%= tweeet.tweeet %>
-        </div>
-        <div>
-          <%= link_to 'Post', tweeet %>
-          <%= link_to 'Edit', edit_tweeet_path(tweeet) %>
-          <%= link_to 'Destroy', tweeet, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      
+      <% if user_signed_in? %>
+      <%= render 'profile' %>
+    <% else %>
+     <%= render 'trends' %>
     <% end %>
-<br>
-<%= link_to 'New Tweeet', new_tweeet_path %>
+
+       <%= render 'feed' %>
+       <%= render 'who-to-follow' %>
+    </div>
+  </div>
+</section>
