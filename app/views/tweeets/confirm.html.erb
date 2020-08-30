@@ -1,10 +1,26 @@
-<h3>Confirmation</h3>
+<div class="section">
+	<div class="container">
+	<div class="columns is-centered">
+
+		 <div class="column is-4">
+
+		<h2 class="title is-2">Confirmation Page</h2>
+
+
 <%= form_with(model: @tweeet, url: tweeets_path, local:true) do |form| %>
     <%= form.hidden_field :tweeet %>
-    <p>Your Tweet: <%= @tweeet.tweeet %></p>
+    <p class="title is-5"> Your Tweet: <%= @tweeet.tweeet %></p>
   <%= form.submit  "Submit" %>
 <% end %>
 <%= form_with(model: @tweeet, url: new_tweeet_path, local:true,method: 'get') do |form| %>
     <%= form.hidden_field :tweeet %>
   <%= form.submit  "back", name: 'back' %>
 <% end %>
+
+
+
+     </div>
+
+    </div>
+   </div>
+  </div>
