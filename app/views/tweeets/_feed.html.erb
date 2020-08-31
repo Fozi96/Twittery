@@ -1,11 +1,15 @@
 <div class="column is-half">
+
   <% if user_signed_in? %>
+
 	<article class="media box">
 		<figure class="media-left">
 			<p class="image is-64x64">
 				<%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
 			</p>
 		</figure>
+
+
 		<div class="media-content">
 
       <%= link_to 'New Tweet', new_tweeet_path %>
@@ -31,17 +35,22 @@
 
 
 <% @tweeets.each do | tweeet | %>
+
   <div class="box">
   	<article class="media">
   		<div class="media-left">
 
   		</div>
+
   		<div class="media-content">
   			<div class="content">
-  			
+
   				<p><%= tweeet.tweeet %></p>
+
   			</div>
+
         <% if user_signed_in? && current_user.id == tweeet.user_id %>
+        
   			<nav class="level">
   				<div class="level-left is-mobile">
   					<%= link_to tweeet, class: "level-item" do %>
